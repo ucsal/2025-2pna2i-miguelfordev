@@ -6,5 +6,8 @@ public class Main {
 		// Estado inicial: vai lançar UnsupportedOperationException por causa do scan
 		// desnecessário
 		svc.printReport("Relatório do Dia");
+		
+		WorkService svc2 = new WorkService(new MultiPrinter());
+		svc2.printReport("Relatório do Dia 2");
 	}
 }
